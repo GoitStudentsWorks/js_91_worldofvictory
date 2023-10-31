@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/png;base64,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" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <script type="module" crossorigin src="/js_96_worldofvictory/assets/index-8d72e604.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_96_worldofvictory/assets/header-9060497c.js">
+    <link rel="stylesheet" href="/js_96_worldofvictory/assets/header-55d7dbf8.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="h-container header-container">
+    <nav class="nav-header">
+      <a href="./index.html" class="header-logo">
+        <svg class="header-logo-swg" width="132" height="24">
+          <!-- <use href="./img/svg/symbol-defs.svg#icon-logo"></use> -->
+
+          <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-logo"></use>
+        </svg>
+      </a>
+
+      <ul class="list-menu list">
+        <li class="list-header">
+          <!-- В ./favorites.html змінити класс на h-link-inactive -->
+          <a id="link1" href="./index.html" class="h-link-active">Home</a>
+        </li>
+        <li class="list-header-favorites">
+          <!-- В ./favorites.html змінити класс на h-link-active -->
+          <a id="link2" href="./favorites.html" class="h-link-inactive"
+            >Favorites</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="heder-social">
+      <li class="heder-soc-li">
+        <a
+          class="heder-soc-svg"
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+        >
+          <svg class="heder-soc-icon" width="44" height="44">
+            <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-facebook-black"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="heder-soc-li">
+        <a
+          class="heder-soc-svg"
+          href="https://www.instagram.com/goitclub/"
+          target="_blank"
+        >
+          <svg class="heder-soc-icon" width="44" height="44">
+            <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-instagram-black"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="heder-soc-li">
+        <a
+          class="heder-soc-svg"
+          href="https://www.youtube.com/c/GoIT"
+          target="_blank"
+        >
+          <svg class="heder-soc-icon" width="44" height="44">
+            <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-youtube-black"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <button class="mob-button" type="button" data-menu-open>
+      <svg class="menu-button" width="32" height="32">
+        <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-mobi-menu-icon"></use>
+      </svg>
+    </button>
+  </div>
+
+  <!--* Мобільне меню**************************************************************************** -->
+
+  <div class="mobil-menu">
+    <!-- Для підключення JS додаємо в хедер data-menu-open на кнопку відкриття і  data-menu-close на кнопку закриття-->
+    <!-- Додаємо is-hidden для JS -->
+    <div class="mob-menu is-hidden" data-menu>
+      <!-- мобільний хедер -->
+
+      <div class="mob-mob-header">
+        <div class="h-container mob-header-container">
+          <button class="mob-close-button" type="button" data-menu-close>
+            <svg class="mob-close-button-mob" width="32" height="32">
+              <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-x"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobil">
+        <ul class="mob-menu-list list">
+          <li class="mob-menu-item">
+            <a href="./index.html" class="mob-menu-link">Home</a>
+          </li>
+          <li class="mob-menu-item">
+            <a href="./favorites.html" class="mob-menu-link">Favorites</a>
+          </li>
+        </ul>
+
+        <ul class="burger-social">
+          <li class="burger-soc-li">
+            <a
+              class="burger-soc-svg"
+              href="https://www.facebook.com/goITclub/"
+              target="_blank"
+            >
+              <svg class="burger-soc-icon" width="44" height="44">
+                <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-facebook-black"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="burger-soc-li">
+            <a
+              class="burger-soc-svg"
+              href="https://www.instagram.com/goitclub/"
+              target="_blank"
+            >
+              <svg class="burger-soc-icon" width="44" height="44">
+                <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-instagram-black"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="burger-soc-li">
+            <a
+              class="burger-soc-svg"
+              href="https://www.youtube.com/c/GoIT"
+              target="_blank"
+            >
+              <svg class="burger-soc-icon" width="44" height="44">
+                <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-youtube-black"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <section class="hero">
+  <div class="hero-container">
+    <h1 class="hero-title">
+      <img class="hero-icon" src="data:image/png;base64,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" alt="sun" />
+      Get <span class="hero-span">Body</span> in<br />
+      shape, Stay healthy
+    </h1>
+    <div class="hero-small-image"></div>
+    <p class="hero-text">
+      Transform your physique and embrace a healthier lifestyle with our <br />
+      comprehensive fitness and nutrition support.
+    </p>
+    <span class="hero-image"></span>
+    <ul class="hero-tags">
+      <li class="hero-tags-item">#Sport</li>
+      <li class="hero-tags-item">#Healthy</li>
+      <li class="hero-tags-item">#Workout</li>
+      <li class="hero-tags-item">#Diet</li>
+    </ul>
+  </div>
+</section>
+
+    <section class="filter-section-next">
+  <div class="ex-title-filter">
+    <h2 class="exercises-title">Exercises</h2>
+    <p class="current-exercises">Waist</p>
+  </div>
+
+  <div class="header-filters">
+    <form class="search-form">
+      <div class="search-exercises">
+        <input type="text" class="search-input" placeholder="Search" />
+        <div class="icon-position">
+          <svg id="icon-search" width="18" height="18">
+            <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-search-converted"></use>
+          </svg>
+          <svg id="icon-x" width="18" height="18">
+            <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-close"></use>
+          </svg>
+        </div>
+      </div>
+    </form>
+    <div class="filter-container-header">
+      <ul class="filter-list-next list">
+        <li class="filter-item-next">
+          <button class="filter-btn bodyparts current" type="button">
+            Body parts
+          </button>
+        </li>
+        <li class="filter-item-next">
+          <button class="filter-btn muscles" type="button">Muscles</button>
+        </li>
+        <li class="filter-item-next">
+          <button class="filter-btn equipment" type="button">Equipment</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="exercises-info-card">
+    <ul class="exercises-back"></ul>
+  </div>
+  <div class="pagination"></div>
+</section>
+
+    <div class="section-catalog">
+  <section class="quote-sport-container">
+  <div class="quote-photo-wrapper">
+    <div class="quote">
+      <svg class="quote-icon-running-man" width="34" height="32">
+        <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-running-man"></use>
+      </svg>
+      <svg class="quote-icon-inverted-commas" width="20" height="20">
+        <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-inverted-commas"></use>
+      </svg>
+      <div class="quote-title-markup">
+        <h4 class="quote-title">Quote of the day</h4>
+        <div class="quote-markup">
+          <!-- <p class="quote-text">A lot of times I find that people who are blessed with the most talent don't ever develop that attitude, and the ones who aren't blessed in that way are the most competitive and have the biggest heart.</p>
+                    <p class="quote-text-author">Tom Brady</p> -->
+        </div>
+      </div>
+    </div>
+    <div class="quote-photo"></div>
+  </div>
+
+  <div class="quote-sport">
+    <div class="quote-sport-item">
+      <svg class="quote-sport-item-icon" width="20" height="20">
+        <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-dumbbell"></use>
+      </svg>
+    </div>
+    <h4 class="quote-sport-title">110 min</h4>
+    <p class="quote-sport-text">Daily norm of sports</p>
+    <p class="quote-sport-description">
+      The World Health Organization recommends at least 150 minutes of
+      moderate-intensity aerobic physical activity throughout the week for
+      adults aged 18-64. However, what happens if we adjust that number to 110
+      minutes every day? While it might seem like a high number to hit,
+      dedicating 110 minutes daily to sporting activities may offer unparalleled
+      benefits to physical health, mental well-being, and overall quality of
+      life.
+    </p>
+  </div>
+</section>
+
+  <section class="filter-section">
+  <!-- <div class="filter-container">
+    <div class="filter-container-header">
+      <h2 class="filter-container-title">Exercises</h2>
+      <ul class="filter-list list">
+        <li class="filter-item">
+          <button class="filter1-btn bodyparts current" type="button">
+            Body parts
+          </button>
+        </li>
+        <li class="filter-item">
+          <button class="filter1-btn muscles" type="button">Muscles</button>
+        </li>
+        <li class="filter-item">
+          <button class="filter1-btn equipment" type="button">Equipment</button>
+        </li>
+      </ul>
+    </div> -->
+  <div class="filter-container-category">
+    <ul class="filter-category-list" id="category-list">
+      <!-- Categories will be dynamically added here -->
+    </ul>
+    <ul class="exercises-back"></ul>
+  </div>
+  <div id="tui-pagination-container" class="tui-pagination"></div>
+</section>
+</div>
+
+    <footer class="footer">
+  <div class="container_test footer_container">
+    <div class="footer_links-mailing">
+      <div class="footer_links">
+        <a class="footer_logo_link" href="../index.html"
+          ><svg class="footer_logo" width="132" height="24">
+            <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-your-energy"></use></svg
+        ></a>
+        <ul class="soc-icons_list">
+          <li class="soc-icons_item">
+            <a
+              class="soc-icons_link"
+              href="https://www.facebook.com/goITclub/"
+              target="_blank"
+              ><svg width="24" height="24" class="soc-icons_logo">
+                <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-facebook-white"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="soc-icons_item">
+            <a
+              class="soc-icons_link"
+              href="https://www.instagram.com/goitclub/"
+              target="_blank"
+            >
+              <svg width="24" height="24" class="soc-icons_logo">
+                <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-instagram-white"></use></svg
+            ></a>
+          </li>
+          <li class="soc-icons_item">
+            <a
+              class="soc-icons_link"
+              href="https://www.youtube.com/c/GoIT"
+              target="_blank"
+              ><svg width="24" height="24" class="soc-icons_logo">
+                <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-youtube-white"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mailing">
+        <h3 class="mailing_slogan">
+          Transforming your <i class="fotteri">body</i> shape with us
+        </h3>
+        <div class="mailing_form_wrapper">
+          <p class="mailing_label">Subscribe and learn about new exercises!</p>
+          <form class="mailing_form" method="post" id="user">
+            <input
+              type="email"
+              name="email"
+              class="mailing_input"
+              placeholder="Email"
+              id="mailing-email"
+              required
+            />
+
+            <button type="submit" class="mailing_button button">
+              <span class="submit-spinner submit-spinner_hide"></span>Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="policy">
+      <p class="policy_rights">Your Energy. All rights reserved.</p>
+      <div class="policy_terms-year">
+        <p class="policy_terms">
+          Privacy Policy &nbsp;/&nbsp; Terms of Service
+        </p>
+        <p class="policy_year">©2023</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <div class="scroll-up">
+  <svg class="scroll-up_svg" viewBox="-2 -2 52 52">
+    <path
+      class="scroll-up_svg_path"
+      d="M24,0
+    a24,24 0 0,1 0,48
+    a24,24 0 0,1 0, -48"
+    />
+  </svg>
+</div>
+
+    <div class="preloader">
+    <div class="preloader__row">
+      <div class="preloader__item"></div>
+      <div class="preloader__item"></div>
+    </div>
+  </div>
+
+    
+    
+  </body>
+</html>

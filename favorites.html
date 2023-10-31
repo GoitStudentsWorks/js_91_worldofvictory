@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAGUExURUdwTAAAAJ8qhFEAAAABdFJOUwBA5thmAAAH+UlEQVR42u2dQZbjKAyG4bFgyRG4xqyGo+GjcRSO4KUXHjNTXXES2wgEP0m631St+r2OvxjxI4QkO0KU/1RKi0D+fEopANfr/65PKwCwX4A09QN+XZ9mbATIGL5HkBI0BwmYB3m7vtsIagf0GsHsgA20YbcS/B0QEBn1W1E+AAuiw/5pMA/ABk5C5zS4J0DAZjGliM1i3zzKZ8CCLKXeedQowDwDNhSQQB11KckdAAHT0QBAxITYI0U5GLBgSu6Roh4M2EAl44AELoUBgAlbSwMA4e0APxoQsdU8ADC/GyCHA5Y/DqCGA9b/H0D/foDtB/AD6ACYjwN+ZuEH8BrA273yz944IMD4DYOstwean4+V8fPCcMD7D10wAD65Dge8//gPJyDgFAicxYEBcCIKToXByTg8HQgnJOGUKJyUhdPCcGIaTo0rNLsPlwfgAgVeIoGLNBaTwYBCFVwqg4t1cLkQL1jCJVO4aAuXjQVauL6LOfQCDFq8V2j7gADW8rMSJoGNAWni+DUPAQFIQATVOaZt61hWo1eIZZldkbNjeMozlD4MU7qWMK/mLn+f95SK7T/yClNsB6Syn5P81aezy7zBg9ncKvMNAJcBuBYfmnF1tmUjk1eAadoJ9QWg2wIic/Z1qjEgcmdAa2jvTwDXCJAnd21aDxfqCJBUqkBv5egnEgf1+BjpUowcIpGweb6z4q4bidRhfDJNLO37MX9Ov19kqXUhj9v+2QR3hXpqa9fHDyYKQAYXhgeQpCjcIXiTFECRzsEfAIoCaCq+kccYngQYKsJSR4CuAGbShlsFYCkPaY++kwQ4Ks71R891qefs3tpRkfZp2ZMAT5zY1EnyVcBCHYVCBUAF+/b0uSqA3MFEGSCpY6s/3VkdMOeFvLIBa34SFkEJ6bLI8iepyAeE7CQEPmDOniYnQS3nC2DNnmcFH5ByNtxaAFNGyCuR97t/XOczIPYShnAAS0bIM1lJyAC2zCREMo+f89bT9X5DEyBeTT6RefwbO58Ky6UELAOwXT680ln0HOB+wz4zMSxAPE/ZTGbR84DlbMNIJsF3gMwl53VuiUsO4GaEbGKHB4inKaeT4McI52QEn90sfD75mamREI7W511H5sZU3su5vPf01xDc5Dcbm99F/bXGYfNfRcQy7moEn98vCYC9GoHYa3Q+DrCXmqcikqwqDzCX2rcmtkvizH1ZZOTZlABcF5mjjlX5UOZaevblmGMrF4pS+odMlbs84OKuyVS5y8fljryeCNxERQh0qtzkY1pDAojYc6rNI3k41vmjhSQBRPgc2NMQKqf5qhUnJkAzZUA+vyaZMtgHOwumERbiKLoIphFmNkDzZnH/pqVcLiuVrQx1THasWdxvdRXMMTRkMiVvFgupUMdYzI8vqlVeC8k6EqBYs7hLbqqULQs1GxpgObO422rijYFOjoVa7ZbOWxsa4FgNZoauB2lWe5emAbzuLFVIZTpOa5MsAAyrracAUKyunFJG2nOaanwBYDk9Ma7wf4rTE2NLdQFO1tmWiiuO0dJiSgDN6EjRJYBkdKSoYnXW1TsJZBFgGJ0ExeqqYpQ/yuVZX68d+CLA1vtBXBGg6q0Itlxkr7cimDLAVRtKdBmgq2W0J8BfBTEu5cLNt4n/LoxhLpeOvgG+UFOI5QLgDTDTExnK1a9YqGn7WjOEewDobXqrVFHjzRrkGNZKCXEHrJSR5koRM+5fRY0hVCp4Yf9HJL6hVkMM+weJMay1SvAdkB2DqTSUuNtlurf3xN4ABnjQ/Un1HQB505nt7p/xa/n0UTfCXDrL8/8c2MW0byILCugfA9jN9gAsKKC3nU2iHXkS7QlUYF/kczQydQE02tc48i0mfWMwaIetBbuMj6eDCQXEfn/SPwaHNnsP7phf+t1B9xjQZ3gk+CjW9bAOuIM+xzb+iXn4wcbWMejESnnw/EnXGEwCx2ATOAabwDG4xMu+NQHmfnfQMQafwDEwc+GNgBUFNIxBJnAMMoFjUNyiSCsg9LuDRu+umcWxFnfQZkXDrgzx3UHbNLwOMAH+pEkIMMAnUEkwIL0MMEPu4I0A9ecD9McB5nWACLqDtwHc6wABdAc4YHoTgN370gzYUH8CA1bUHSwf9ycRBQTUHUwggBvhWHAWacCMArh7s3tVhMSOEj1oAhLAPrCggbJADwsSNCEF4KeSFHgDBCCCgJaTt0bPzRo6MRL+ZEYBaAJmQQFtiWUH3kAG0JjZ9mgu0aPZTA/kXrL+JICA5huQg3PS8PuEIgjoqHNpJJl7BXTUNgx4A0fABAK66qUWrbJZtM7ngGV0AnS+ucJDJbYDoO96gZZ7BWoCOQ7QWbZX42rm8UMAjfYNaLBo/+QOYECnEC2qZAsKse1FGkVAbwOKB5Wce370zQBUyQIVohwHEKA7+NhbsfQwQK+SDarkcYCI+pOAAibUn8AAAbqD7WMAVMlwUyD802jjABH1J+FTAI0qWaNKNqgQYYBFlWzR9lYHChEHeFDJ8A8dnt55BPgTGCBAd7B9DKBQJStUyRoVIgwwqJINqmSDCtGOAgjQn2yfA3hQyfhjE6gQhwEi6k8CCphQfwIDBAjoFyL8G8KjAAsK6BeiAYU4DBBQwIQCxKcBGwpYUcDyccCMAiIKCCigX4i35SxAwIYCkJeKK1AG3wBABs8PbAO7c0AAHpPBd5CFXP8VJ0Kvhv/S8gIBFDaLgnpWvcWKG3a9kH0y+hfeemuj4XJSMQAAAABJRU5ErkJggg==" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorites</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <script type="module" crossorigin src="/js_96_worldofvictory/assets/favorites-6b546cbb.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_96_worldofvictory/assets/header-9060497c.js">
+    <link rel="stylesheet" href="/js_96_worldofvictory/assets/header-55d7dbf8.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="h-container header-container">
+    <nav class="nav-header">
+      <a href="./index.html" class="header-logo">
+        <svg class="header-logo-swg" width="132" height="24">
+          <!-- <use href="./img/svg/symbol-defs.svg#icon-logo"></use> -->
+
+          <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-logo"></use>
+        </svg>
+      </a>
+
+      <ul class="list-menu list">
+        <li class="list-header">
+          <!-- В ./favorites.html змінити класс на h-link-inactive -->
+          <a id="link1" href="./index.html" class="h-link-active">Home</a>
+        </li>
+        <li class="list-header-favorites">
+          <!-- В ./favorites.html змінити класс на h-link-active -->
+          <a id="link2" href="./favorites.html" class="h-link-inactive"
+            >Favorites</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="heder-social">
+      <li class="heder-soc-li">
+        <a
+          class="heder-soc-svg"
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+        >
+          <svg class="heder-soc-icon" width="44" height="44">
+            <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-facebook-black"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="heder-soc-li">
+        <a
+          class="heder-soc-svg"
+          href="https://www.instagram.com/goitclub/"
+          target="_blank"
+        >
+          <svg class="heder-soc-icon" width="44" height="44">
+            <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-instagram-black"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="heder-soc-li">
+        <a
+          class="heder-soc-svg"
+          href="https://www.youtube.com/c/GoIT"
+          target="_blank"
+        >
+          <svg class="heder-soc-icon" width="44" height="44">
+            <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-youtube-black"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <button class="mob-button" type="button" data-menu-open>
+      <svg class="menu-button" width="32" height="32">
+        <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-mobi-menu-icon"></use>
+      </svg>
+    </button>
+  </div>
+
+  <!--* Мобільне меню**************************************************************************** -->
+
+  <div class="mobil-menu">
+    <!-- Для підключення JS додаємо в хедер data-menu-open на кнопку відкриття і  data-menu-close на кнопку закриття-->
+    <!-- Додаємо is-hidden для JS -->
+    <div class="mob-menu is-hidden" data-menu>
+      <!-- мобільний хедер -->
+
+      <div class="mob-mob-header">
+        <div class="h-container mob-header-container">
+          <button class="mob-close-button" type="button" data-menu-close>
+            <svg class="mob-close-button-mob" width="32" height="32">
+              <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-x"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobil">
+        <ul class="mob-menu-list list">
+          <li class="mob-menu-item">
+            <a href="./index.html" class="mob-menu-link">Home</a>
+          </li>
+          <li class="mob-menu-item">
+            <a href="./favorites.html" class="mob-menu-link">Favorites</a>
+          </li>
+        </ul>
+
+        <ul class="burger-social">
+          <li class="burger-soc-li">
+            <a
+              class="burger-soc-svg"
+              href="https://www.facebook.com/goITclub/"
+              target="_blank"
+            >
+              <svg class="burger-soc-icon" width="44" height="44">
+                <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-facebook-black"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="burger-soc-li">
+            <a
+              class="burger-soc-svg"
+              href="https://www.instagram.com/goitclub/"
+              target="_blank"
+            >
+              <svg class="burger-soc-icon" width="44" height="44">
+                <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-instagram-black"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="burger-soc-li">
+            <a
+              class="burger-soc-svg"
+              href="https://www.youtube.com/c/GoIT"
+              target="_blank"
+            >
+              <svg class="burger-soc-icon" width="44" height="44">
+                <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-youtube-black"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main>
+  <section class="favorites">
+    <div class="favorites-container">
+      <h1 class="favorites-tittle">Favorites</h1>
+
+      <div class="favorites-thumb">
+        <div class="quote-conteiner">
+          <div class="favorites-quote">
+            <svg class="man-svg" width="34" height="32">
+              <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-icon"></use>
+            </svg>
+
+            <div class="quote-content">
+              <svg class="commas-svg" width="20" height="20">
+                <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-inverted-commas"></use>
+              </svg>
+
+              <h2 class="quote-tittle">Quote of the day</h2>
+
+              <p class="quote-text">
+                A lot of times I find that people who are blessed with the most
+                talent don't ever develop that attitude, and the ones who aren't
+                blessed in that way are the most competitive and have the
+                biggest heart.
+              </p>
+              <p class="quote-author"></p>
+            </div>
+          </div>
+
+          <div class="features-container">
+            <div class="features">
+              <div class="features-content">
+                <svg width="20" height="20">
+                  <use href="/js_96_worldofvictory/assets/sprite-1e3c4a5e.svg#icon-dumbbell-black"></use>
+                </svg>
+                <div class="text-pozition">
+                  <p class="features-tittle">110 min</p>
+                  <p class="favorites-text">Daily norm of sports</p>
+                </div>
+              </div>
+            </div>
+
+            <img
+              class="favorites-img"
+              srcset="/js_96_worldofvictory/assets/women-working-m-46299474.jpg 335w, /js_96_worldofvictory/assets/women-working-t-0f4dbd10.jpg 344w, /js_96_worldofvictory/assets/women-working-d-7eeeaeda.jpg 239w"
+              sizes="(min-width: 1440px) 239px, (min-width: 768px) 344px, 100vw"
+              src="/js_96_worldofvictory/assets/women-working-m-46299474.jpg"
+              alt="women walking outdoors"
+            />
+          </div>
+        </div>
+        <div class="js-hidden-text">
+          <p class="favorites-text default-text">
+            It appears that you haven't added any exercises to your favorites
+            yet. To get started, you can add exercises that you like to your
+            favorites for easier access in the future.
+          </p>
+        </div>
+        <div class="favorites-gallery">
+          <ul class="gallery-list"></ul>
+          <div
+            id="tui-pagination-container"
+            class="tui-pagination favorite-tui-pagination"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+    
+    
+  </body>
+</html>
